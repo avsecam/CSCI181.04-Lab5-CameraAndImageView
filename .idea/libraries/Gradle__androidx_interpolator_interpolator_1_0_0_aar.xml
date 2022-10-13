@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.interpolator:interpolator:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/7e668b8208ddec1ed2fb77fb9f0b4d1a/transformed/interpolator-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

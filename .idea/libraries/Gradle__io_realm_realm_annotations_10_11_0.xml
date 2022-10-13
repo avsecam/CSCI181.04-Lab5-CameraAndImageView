@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm:realm-annotations:10.11.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/9f0d63e6107a9efae3cd08f389c696db5ddb765d/realm-annotations-10.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/9f0d63e6107a9efae3cd08f389c696db5ddb765d/realm-annotations-10.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/9f0d63e6107a9efae3cd08f389c696db5ddb765d/realm-annotations-10.11.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/760837ff583296d9f46919326fbc66fd1fda74ca/realm-annotations-10.11.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/760837ff583296d9f46919326fbc66fd1fda74ca/realm-annotations-10.11.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/760837ff583296d9f46919326fbc66fd1fda74ca/realm-annotations-10.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/ddce6ed3a1f4a39006cca4e0869234487eddffa3/realm-annotations-10.11.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/ddce6ed3a1f4a39006cca4e0869234487eddffa3/realm-annotations-10.11.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/10.11.0/ddce6ed3a1f4a39006cca4e0869234487eddffa3/realm-annotations-10.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Login_Register_Shared_Prefs.iml" filepath="$PROJECT_DIR$/.idea/modules/Login_Register_Shared_Prefs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Login_Register_Shared_Prefs.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
