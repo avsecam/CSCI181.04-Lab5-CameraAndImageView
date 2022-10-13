@@ -1,4 +1,4 @@
-package com.avsecam.usermanagement;
+package com.avsecam.cameraimageview;
 
 import org.junit.Test;
 

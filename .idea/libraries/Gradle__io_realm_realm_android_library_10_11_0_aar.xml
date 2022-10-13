@@ -1,24 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: io.realm:realm-android-library:10.11.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/res" />
       <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/res" />
       <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/5940c6ad3cdc69ace86ab0ac7366d227/transformed/realm-android-library-10.11.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/cfbf4c46ecec2b1092eae646a6f57773dcd6dd9/realm-android-library-10.11.0-javadoc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/cfbf4c46ecec2b1092eae646a6f57773dcd6dd9/realm-android-library-10.11.0-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/cfbf4c46ecec2b1092eae646a6f57773dcd6dd9/realm-android-library-10.11.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/38c586d27b9fd6975838cd4c8b038834fb32a94a/realm-android-library-10.11.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/38c586d27b9fd6975838cd4c8b038834fb32a94a/realm-android-library-10.11.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/10.11.0/38c586d27b9fd6975838cd4c8b038834fb32a94a/realm-android-library-10.11.0-sources.jar!/" />
     </SOURCES>
   </library>

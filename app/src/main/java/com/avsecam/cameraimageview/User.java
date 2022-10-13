@@ -1,4 +1,4 @@
-package com.avsecam.usermanagement;
+package com.avsecam.cameraimageview;
 
 import io.realm.RealmObject;
 import io.realm.annotations.Required;

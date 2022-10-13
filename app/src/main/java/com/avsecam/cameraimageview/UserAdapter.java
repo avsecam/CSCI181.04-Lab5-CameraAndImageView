@@ -1,4 +1,4 @@
-package com.avsecam.usermanagement;
+package com.avsecam.cameraimageview;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

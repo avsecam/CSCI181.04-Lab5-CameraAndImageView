@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">User Management</string>
+    <string name="app_name">Camera and Image View</string>
     <string name="SHAREDPREFERENCES_NAME">data</string>
     <string name="USERNAME_KEY">name</string>
     <string name="PASSWORD_KEY">password</string>
     <string name="UUID_KEY">uuid</string>
     <string name="REMEMBERME_KEY">rememberMe</string>
+    <string name="fileAuthority">com.avsecam.cameraimageview</string>
 </resources>

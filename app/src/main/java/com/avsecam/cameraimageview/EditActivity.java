@@ -1,7 +1,5 @@
-package com.avsecam.usermanagement;
+package com.avsecam.cameraimageview;
 
-import android.content.SharedPreferences;
-import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -11,8 +9,6 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
-
-import java.util.UUID;
 
 import io.realm.Realm;
 

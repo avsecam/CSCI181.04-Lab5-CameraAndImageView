@@ -1,12 +1,10 @@
-package com.avsecam.usermanagement;
+package com.avsecam.cameraimageview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.widget.Button;
 import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;

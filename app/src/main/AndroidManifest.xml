@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.avsecam.usermanagement">
+    package="com.avsecam.cameraimageview">
 
     <application
-        android:name=".RealmApp"
+        android:name="com.avsecam.cameraimageview.RealmApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,19 +15,19 @@
         android:theme="@style/Theme.Realm"
         tools:targetApi="31">
         <activity
-            android:name=".EditActivity_"
+            android:name="com.avsecam.cameraimageview.EditActivity_"
             android:exported="false" />
         <activity
-            android:name=".AdminActivity_"
+            android:name="com.avsecam.cameraimageview.AdminActivity_"
             android:exported="false" />
         <activity
-            android:name=".LandingActivity_"
+            android:name="com.avsecam.cameraimageview.LandingActivity_"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity_"
+            android:name="com.avsecam.cameraimageview.RegisterActivity_"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity_"
+            android:name="com.avsecam.cameraimageview.LoginActivity_"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

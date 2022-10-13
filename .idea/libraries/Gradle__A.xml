@@ -1,7 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: A">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/realmadapter4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/b8d72039d7cb4ee6fcf447526bf32d4b/transformed/Android-Image-Cropper-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/b8d72039d7cb4ee6fcf447526bf32d4b/transformed/Android-Image-Cropper-release/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Other/.gradle/caches/transforms-3/b8d72039d7cb4ee6fcf447526bf32d4b/transformed/Android-Image-Cropper-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
