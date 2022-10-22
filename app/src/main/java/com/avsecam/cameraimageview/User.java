@@ -9,6 +9,7 @@ public class User extends RealmObject {
     private String name;
     @Required
     private String password;
+    private String imageFilename;
 
     public void setUuid(String uuid) {
         this.uuid = uuid;
@@ -29,5 +30,12 @@ public class User extends RealmObject {
     }
     public String getPassword() {
         return password;
+    }
+
+    public void setImageFilename(String imageFilename) {
+        this.imageFilename = imageFilename;
+    }
+    public String getImageFilename() {
+        return imageFilename;
     }
 }

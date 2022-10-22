@@ -8,8 +8,11 @@ import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+
+import java.io.File;
 
 import io.realm.OrderedRealmCollection;
 import io.realm.Realm;
@@ -20,6 +23,7 @@ public class UserAdapter extends RealmRecyclerViewAdapter<User, UserAdapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
+        private ImageView userImage;
         private TextView usernameLabel;
         private TextView passwordLabel;
 
@@ -29,6 +33,7 @@ public class UserAdapter extends RealmRecyclerViewAdapter<User, UserAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            userImage = itemView.findViewById(R.id.imageUser);
             usernameLabel = itemView.findViewById(R.id.labelUsername);
             passwordLabel = itemView.findViewById(R.id.labelPassword);
 
@@ -76,5 +81,9 @@ public class UserAdapter extends RealmRecyclerViewAdapter<User, UserAdapter.View
                 userToBeDeleted.deleteFromRealm();
             });
         });
+
+        // Refresh image
+        File savedUserImage = new File(adminActivity.imageDir, user.getImageFilename());
+        Helper.refreshImageView(savedUserImage, holder.userImage);
     }
 }

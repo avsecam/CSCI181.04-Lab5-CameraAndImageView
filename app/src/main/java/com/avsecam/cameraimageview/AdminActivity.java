@@ -12,6 +12,8 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
+import java.io.File;
+
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -20,10 +22,12 @@ public class AdminActivity extends AppCompatActivity {
 
     @ViewById(R.id.recyclerViewUsers) RecyclerView usersList;
 
+    public File imageDir;
     private Realm realm;
 
     @AfterViews
     protected void init() {
+        imageDir = getExternalCacheDir();
         realm = Realm.getDefaultInstance();
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

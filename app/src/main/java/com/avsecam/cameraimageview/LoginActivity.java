@@ -2,16 +2,23 @@ package com.avsecam.cameraimageview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.listener.multi.BaseMultiplePermissionsListener;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
+
+import java.io.File;
 
 import io.realm.Realm;
 
@@ -28,6 +35,27 @@ public class LoginActivity extends AppCompatActivity {
     private Realm realm;
 
     @AfterViews
+    private void checkPermissions() {
+        Dexter
+                .withContext(this)
+                .withPermissions(
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.CAMERA)
+                .withListener(new BaseMultiplePermissionsListener() {
+                    @Override
+                    public void onPermissionsChecked(MultiplePermissionsReport report) {
+                        if (report.areAllPermissionsGranted()) {
+                            init();
+                        } else {
+                            Toast.makeText(LoginActivity.this, "You must provide permissions for the app to run.", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                    }
+                })
+                .check();
+    }
+
     protected void init() {
         sharedPreferences = getSharedPreferences(getString(R.string.SHAREDPREFERENCES_NAME), MODE_PRIVATE);
         editor = sharedPreferences.edit();
