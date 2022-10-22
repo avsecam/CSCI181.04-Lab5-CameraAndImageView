@@ -9,15 +9,15 @@
 
     <TextView
         android:id="@+id/labelUsername"
-        android:layout_width="199dp"
+        android:layout_width="130dp"
         android:layout_height="32dp"
-        android:layout_marginStart="39dp"
+        android:layout_marginStart="104dp"
         android:text="Username"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.307" />
 
     <ImageButton
         android:id="@+id/buttonEdit"
@@ -47,10 +47,10 @@
 
     <TextView
         android:id="@+id/labelPassword"
-        android:layout_width="197dp"
+        android:layout_width="130dp"
         android:layout_height="17dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="2dp"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelUsername" />
@@ -64,5 +64,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
