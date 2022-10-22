@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
     private Realm realm;
 
     @AfterViews
-    private void checkPermissions() {
+    protected void checkPermissions() {
         Dexter
                 .withContext(this)
                 .withPermissions(

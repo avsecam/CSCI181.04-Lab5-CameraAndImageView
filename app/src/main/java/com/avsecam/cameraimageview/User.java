@@ -9,7 +9,7 @@ public class User extends RealmObject {
     private String name;
     @Required
     private String password;
-    private String imageFilename;
+    private String imageFilename = "";
 
     public void setUuid(String uuid) {
         this.uuid = uuid;

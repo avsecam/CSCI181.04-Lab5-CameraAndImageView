@@ -27,7 +27,7 @@
     <content url="file://$MODULE_DIR$/../../../app/src/testDebug" />
     <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Login_Register_Shared_Prefs.app.main" scope="TEST" />
+    <orderEntry type="module" module-name="Camera_and_Image_View.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.realm:realm-annotations:10.11.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.mongodb:bson:3.12.1" level="project" />
@@ -93,5 +93,5 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: A" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Login_Register_Shared_Prefs.app.main" />
+  <component name="TestModuleProperties" production-module="Camera_and_Image_View.app.main" />
 </module>

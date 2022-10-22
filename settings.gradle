@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Login Register Shared Prefs"
+rootProject.name = "Camera and Image View"
 include ':app'

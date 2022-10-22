@@ -11,15 +11,15 @@ import java.io.File;
 public class Helper {
     /**
      * Attempt to refresh the image view.
-     * Will not refresh if the given image does not exist.
+     * Will use a fallback image if the given image does not exist.
      */
     public static void refreshImageView(File image, ImageView view) {
-        if (!image.exists()) return;
         Picasso
                 .get()
                 .load(image)
                 .networkPolicy(NetworkPolicy.NO_CACHE)
                 .memoryPolicy(MemoryPolicy.NO_CACHE)
+                .placeholder(android.R.drawable.sym_def_app_icon)
                 .into(view);
     }
 }
