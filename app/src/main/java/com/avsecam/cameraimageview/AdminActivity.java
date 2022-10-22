@@ -15,6 +15,7 @@ import org.androidannotations.annotations.ViewById;
 import java.io.File;
 
 import io.realm.Realm;
+import io.realm.RealmQuery;
 import io.realm.RealmResults;
 
 @EActivity(R.layout.activity_admin)
@@ -48,11 +49,15 @@ public class AdminActivity extends AppCompatActivity {
 
     @Click(R.id.buttonClearUsers)
     public void onClearButtonPressed() {
-        realm.executeTransactionAsync(r ->
-            r.where(User.class)
-             .findAll()
-             .deleteAllFromRealm()
-        );
+        RealmResults<User> results = realm.where(User.class).findAll();
+        File imageFile;
+        for (User result : results) {
+            imageFile = new File(imageDir, result.getImageFilename() + Helper.imageExtension);
+            imageFile.delete();
+        }
+        realm.beginTransaction();
+            results.deleteAllFromRealm();
+        realm.commitTransaction();
         Toast.makeText(this, "All users deleted.", Toast.LENGTH_SHORT).show();
     }
 }

@@ -79,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                int userCount = realm.where(User.class).findAll().size() + 1;
+                int userCount = realm.where(User.class).findAll().size();
                 Toast.makeText(this, "New User saved. Total: " + userCount, Toast.LENGTH_SHORT).show();
                 finish();
             } else {

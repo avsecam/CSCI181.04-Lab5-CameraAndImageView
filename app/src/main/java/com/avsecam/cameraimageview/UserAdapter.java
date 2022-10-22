@@ -80,6 +80,7 @@ public class UserAdapter extends RealmRecyclerViewAdapter<User, UserAdapter.View
             realm.executeTransactionAsync(r -> {
                 User userToBeDeleted = r.where(User.class).equalTo(adminActivity.getString(R.string.USERNAME_KEY), holder.usernameLabel.getText().toString()).findFirst();
                 File userImageToBeDeleted = new File(adminActivity.imageDir, userToBeDeleted.getImageFilename() + Helper.imageExtension);
+                userImageToBeDeleted.delete();
                 userToBeDeleted.deleteFromRealm();
             });
         });
