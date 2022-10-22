@@ -1,6 +1,8 @@
 package com.avsecam.cameraimageview;
 
+import android.content.Intent;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
+
+import java.io.File;
 
 import io.realm.Realm;
 
@@ -20,9 +24,15 @@ public class EditActivity extends AppCompatActivity {
     EditText passwordField;
     @ViewById(R.id.editTextConfirmNewPassword)
     EditText confirmPasswordField;
+    @ViewById(R.id.editImage)
+    ImageView userImage;
 
+    private File imageDir;
     private Realm realm;
     private User userToBeEdited;
+
+    private boolean imageHasBeenTaken = false;
+    private byte[] jpeg;
 
     String username;
     String password;
@@ -30,6 +40,7 @@ public class EditActivity extends AppCompatActivity {
 
     @AfterViews
     protected void init() {
+        imageDir = getExternalCacheDir();
         realm = Realm.getDefaultInstance();
 
         usernameField.setText(getIntent().getStringExtra(getString(R.string.USERNAME_KEY)));
@@ -37,6 +48,8 @@ public class EditActivity extends AppCompatActivity {
         confirmPasswordField.setText(passwordField.getText().toString());
 
         userToBeEdited = realm.where(User.class).equalTo("name", usernameField.getText().toString()).findFirst();
+        File userImageFile = new File(imageDir, userToBeEdited.getImageFilename() + Helper.imageExtension);
+        Helper.refreshImageView(userImage, userImageFile);
     }
 
     @Click(R.id.buttonSaveEdit)
@@ -64,6 +77,14 @@ public class EditActivity extends AppCompatActivity {
                     userToBeEdited.setName(username);
                     userToBeEdited.setPassword(password);
                 realm.commitTransaction();
+                if (imageHasBeenTaken) {
+                    // Overwrite existing image
+                    try {
+                        Helper.saveFile(imageDir, userToBeEdited.getImageFilename(), jpeg);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
                 Toast.makeText(this, "User " + userToBeEdited.getName() + " saved.", Toast.LENGTH_LONG).show();
                 finish();
             } else {
@@ -81,5 +102,37 @@ public class EditActivity extends AppCompatActivity {
     @Click(R.id.buttonCancelEdit)
     public void onCancelButtonPressed() {
         finish();
+    }
+
+
+    @Click(R.id.editImage)
+    public void onImagePressed() {
+        ImageActivity_.intent(this).startForResult(Helper.REQUEST_CODE_IMAGE_SCREEN);
+    }
+
+    // SINCE WE USE startForResult(), code will trigger this once the next screen calls finish()
+    public void onActivityResult(int requestCode, int responseCode, Intent data)
+    {
+        super.onActivityResult(requestCode, responseCode, data);
+
+        if (requestCode == Helper.REQUEST_CODE_IMAGE_SCREEN)
+        {
+            if (responseCode == ImageActivity.RESULT_CODE_IMAGE_TAKEN)
+            {
+                imageHasBeenTaken = true;
+
+                // receive the raw JPEG data from ImageActivity
+                // this can be saved to a file or save elsewhere like Realm or online
+                jpeg = data.getByteArrayExtra("rawJpeg");
+
+                try {
+                    // Save temporarily. Save permanently when saving user
+                    File savedImage = Helper.saveFile(imageDir, Helper.tempImageFilename, jpeg);
+                    Helper.refreshImageView(userImage, savedImage.getAbsoluteFile());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

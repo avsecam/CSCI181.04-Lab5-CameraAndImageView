@@ -18,7 +18,7 @@
         android:inputType="textPersonName"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editImage" />
 
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="125dp"
         android:text="EDIT USER"
         android:textAlignment="center"
@@ -92,11 +92,12 @@
 
     <ImageView
         android:id="@+id/editImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="141dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="142dp"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelEdit"

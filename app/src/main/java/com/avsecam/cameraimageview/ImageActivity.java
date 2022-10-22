@@ -58,6 +58,7 @@ public class ImageActivity extends AppCompatActivity
         cropImageView.rotateImage(90);
     }
 
+
     @Click(R.id.buttonCancelImage)
     public void cancel()
     {

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
@@ -78,12 +79,13 @@ public class UserAdapter extends RealmRecyclerViewAdapter<User, UserAdapter.View
             Realm realm = Realm.getDefaultInstance();
             realm.executeTransactionAsync(r -> {
                 User userToBeDeleted = r.where(User.class).equalTo(adminActivity.getString(R.string.USERNAME_KEY), holder.usernameLabel.getText().toString()).findFirst();
+                File userImageToBeDeleted = new File(adminActivity.imageDir, userToBeDeleted.getImageFilename() + Helper.imageExtension);
                 userToBeDeleted.deleteFromRealm();
             });
         });
 
         // Refresh image
-        File savedUserImage = new File(adminActivity.imageDir, user.getImageFilename());
-        Helper.refreshImageView(savedUserImage, holder.userImage);
+        File savedUserImage = new File(adminActivity.imageDir, user.getImageFilename() + Helper.imageExtension);
+        Helper.refreshImageView(holder.userImage, savedUserImage);
     }
 }
